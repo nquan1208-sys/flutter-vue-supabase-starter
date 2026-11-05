@@ -5,7 +5,7 @@ import 'package:starter_app/base/store/store_base.dart';
 
 class AppStore extends StoreBase {
   final _disposers = AutoDisposeManager();
-  late final locale = signal(const Locale('vi')).manageBy(_disposers);
+  late final locale = signal(const Locale('en')).manageBy(_disposers);
 
   void setLocale(Locale value) => locale.value = value;
 

@@ -1,7 +1,8 @@
 # Starter mobile
 
 Android/iOS Flutter app with Signals state, Riverpod dependency injection,
-route-owned stores, Vietnamese/English localization, and local/dev/prod flavors.
+route-owned stores, English/Vietnamese localization, and local/dev/prod flavors.
+English is the default language; language selection lasts for the current session.
 
 See [the root setup guide](../README.md) for environment configuration, local
 backend URLs, commands, checks, and package renaming. Run Flutter commands here.

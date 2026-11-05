@@ -26,26 +26,26 @@ void main() {
         child: const StarterApp(),
       ),
     );
-    expect(find.text('Trang chủ'), findsOneWidget);
-    await tester.tap(find.text('Mở bộ đếm'));
+    expect(find.text('Home'), findsOneWidget);
+    await tester.tap(find.text('Open counter'));
     await tester.pumpAndSettle();
     final screen = tester.widget<CounterScreen>(find.byType(CounterScreen));
     final store = container.read(screen.storeProvider);
     await tester.tap(find.byType(FloatingActionButton));
     await tester.pump();
-    expect(find.text('Số đếm: 1'), findsOneWidget);
+    expect(find.text('Count: 1'), findsOneWidget);
     await tester.tap(find.byType(BackButton));
     await tester.pumpAndSettle();
     expect(store.isDispose, isTrue);
     expect(store.count.disposed, isTrue);
     await tester.tap(find.byType(DropdownButton<Locale>));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('English').last);
+    await tester.tap(find.text('Tiếng Việt').last);
     await tester.pumpAndSettle();
-    expect(find.text('Home'), findsOneWidget);
-    await tester.tap(find.text('Open counter'));
+    expect(find.text('Trang chủ'), findsOneWidget);
+    await tester.tap(find.text('Mở bộ đếm'));
     await tester.pumpAndSettle();
-    expect(find.text('Count: 0'), findsOneWidget);
+    expect(find.text('Số đếm: 0'), findsOneWidget);
     expect(
       container.read(
         tester.widget<CounterScreen>(find.byType(CounterScreen)).storeProvider,
