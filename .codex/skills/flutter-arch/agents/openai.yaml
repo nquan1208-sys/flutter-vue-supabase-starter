@@ -1,0 +1,6 @@
+interface:
+  display_name: "Flutter Architecture"
+  short_description: "Screen/store architecture for this Flutter starter"
+  default_prompt: "Use $flutter-arch to implement this feature like app/lib/features/counter with Signals, Riverpod, and route-owned stores."
+policy:
+  allow_implicit_invocation: false

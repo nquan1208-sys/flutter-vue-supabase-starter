@@ -1,0 +1,11 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Starter",
+  "homeTitle": "Trang chủ",
+  "welcome": "Bắt đầu ứng dụng tiếp theo của bạn.",
+  "openCounter": "Mở bộ đếm",
+  "counterTitle": "Bộ đếm",
+  "increment": "Tăng",
+  "language": "Ngôn ngữ",
+  "countLabel": "Số đếm: {count}"
+}

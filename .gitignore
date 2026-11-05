@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/node_modules/
+**/dist/
+web/auto-imports.d.ts
+web/components.d.ts
+app/lib/l10n/gen_l10n/

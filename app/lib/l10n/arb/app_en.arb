@@ -1,0 +1,18 @@
+{
+  "@@locale": "en",
+  "appTitle": "Starter",
+  "homeTitle": "Home",
+  "welcome": "Your next app starts here.",
+  "openCounter": "Open counter",
+  "counterTitle": "Counter",
+  "increment": "Increment",
+  "language": "Language",
+  "countLabel": "Count: {count}",
+  "@countLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
